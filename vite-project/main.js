@@ -16,7 +16,7 @@ camera.position.setZ(30);
 
 renderer.render(scene, camera);
 
-const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+const geometry = new THREE.TorusKnotGeometry(8, 1, 100, 10, 1, 5);
 const material = new THREE.MeshStandardMaterial({color: 'turquoise'});
 const torus = new THREE.Mesh(geometry, material);
 
@@ -26,9 +26,13 @@ const pointLight = new THREE.PointLight(0xffffff);
 pointLight.position.set(100, 5, 5);
 scene.add(pointLight);
 
-const pointLightSide = new THREE.PointLight("magenta");
+const pointLightSide = new THREE.PointLight('magenta');
 pointLightSide.position.set(5, 50, 10);
 scene.add(pointLightSide);
+
+const ambientLight = new THREE.AmbientLight('brown');
+ambientLight.position.set(-30);
+scene.add(ambientLight);
 
 /*renderer.render(scene, camera); */
 
