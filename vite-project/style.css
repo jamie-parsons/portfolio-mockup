@@ -21,7 +21,6 @@ main{
   z-index: 99;
   position: absolute;
   padding: 120px 0px;
-
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   /*opacity: 0;*/
@@ -34,6 +33,7 @@ h1, h2, h3, blockquote{
   font-size: 60px;
   font-weight: 700;
   font-style: normal;
+  
 }
 
 
@@ -42,25 +42,42 @@ h1, h2, h3, blockquote{
 header {
   background: var(--dark-bg);
   grid-column: 2 / span 5;
+  justify-self: end;
   font-size: 2.5rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
+  border-radius: 25px;
+
 }
 
 section {
-  grid-column: 2 / 8;
+
+  grid-column: 2 / span 8;
+  justify-content: end;
+
   padding: 1rem;
   background: var(--dark-bg);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
+  border-radius: 25px;
+
 }
+.container__image {
+  grid-column-start: 5;
+
+  width: 50px;
+  float: right;
+}
+section p {
+}
+
 
 blockquote {
   margin: 0;
-  padding: 0;
-  grid-column: 2 / span 8;
+  grid-column: 5 / span 8;
   margin-bottom: var(--spacing);
+  
 }
 
 blockquote p {
@@ -69,6 +86,10 @@ blockquote p {
   font-size: 2rem;
   display: inline;
   line-height: 1;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+
+
 }
 
 .left {
