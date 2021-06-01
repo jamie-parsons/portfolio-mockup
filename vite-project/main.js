@@ -32,13 +32,21 @@ scene.add(torus);
 const geometry2 = new THREE.RingGeometry(6, 5.5, 42);
 /*const geometry = new THREE.TorusGeometry(10, 3, 16, 100);*/
 const material2 = new THREE.MeshStandardMaterial({color: 'darkblue'});
-const torus2 = new THREE.Mesh(geometry2, material2);
- torus2.rotation.x = Math.PI/1.8;
- torus2.position.z = 30;
- torus2.position.x = -10;
- torus2.position.y = 0;
+const bigring = new THREE.Mesh(geometry2, material2);
+bigring.rotation.x = Math.PI/1.75;
+bigring.position.z = 30;
+bigring.position.x = -10;
+bigring.position.y = 0;
 
- scene.add(torus2);
+ scene.add(bigring);
+
+ const secondgeometry = new THREE.RingGeometry(5, 4.5, 42);
+ const secondmaterial = new THREE.MeshStandardMaterial({color: "purple"});
+ const secondring = new THREE.Mesh(secondgeometry, secondmaterial);
+ secondring.rotation.x = Math.PI/1.9;
+ secondring.position.z = 30;
+ secondring.position.x = -10;
+ scene.add(secondring);
 
 const pointLight = new THREE.PointLight('grey');
 pointLight.position.set(-20, 15, 5);
@@ -120,6 +128,5 @@ function animate() {
 
   renderer.render( scene, camera );
 }
-
 
 animate();

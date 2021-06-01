@@ -24,7 +24,7 @@ main{
 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  opacity: 0;
+  /*opacity: 0;*/
 
   
 }
