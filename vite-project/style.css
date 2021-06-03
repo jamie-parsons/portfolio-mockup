@@ -1,39 +1,31 @@
 canvas{
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
+  
 }
-
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.65);
   --spacing: 350px;
-
   font-family: 'Nunito', sans-serif;
-  font-weight: 400;
   font-style: normal;
+  
 }
 
 
 main{
-  width: 100%;
+  width: 100vw;
   color: white;
   z-index: 99;
-  position: absolute;
-  padding: 120px 0px;
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  /*padding: 120px 0px;*/
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  /*grid-template-rows: 1fr 2fr 1fr;*/
   /*opacity: 0;*/
 
-  
-}
-
-h1, h2, h3, blockquote{
-  font-family: 'Lobster';
-  font-size: 60px;
-  font-weight: 700;
-  font-style: normal;
-  
 }
 
 
@@ -47,50 +39,57 @@ header {
   padding: 2rem;
   margin-bottom: var(--spacing);
   border-radius: 25px;
-
 }
 
-section {
-
-  grid-column: 2 / span 8;
-  justify-content: end;
-
-  padding: 1rem;
-  background: var(--dark-bg);
-  font-size: 1.25rem;
-  line-height: 1.5;
-  margin-bottom: var(--spacing);
-  border-radius: 25px;
-
-}
-.container__image {
-  grid-column-start: 5;
-
-  width: 50px;
-  float: right;
-}
-section p {
+h1, h2, h3 {
+  font-family: 'Lobster';
+  font-size: 60px;
+  font-weight: 700;
+  font-style: normal;
+  
 }
 
-
-blockquote {
-  margin: 0;
-  grid-column: 5 / span 8;
+blockquote{
+  font-family: 'Lobster';
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0px;
+  grid-column: 3 / span 8;
   margin-bottom: var(--spacing);
   
 }
 
+section {
+  grid-column: 2 / span 7;
+  justify-content: end;
+  background: var(--dark-bg);
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  border-radius: 25px;
+}
+
+.container__image {
+  grid-column-start: 5;
+  width: 50px;
+  float: right;
+}
+
 blockquote p {
   color: black;
-  background-color: rgba(255, 255, 255, 0.65);
-  font-size: 2rem;
-  display: inline;
+  background-color: rgba(197, 170, 170, 0.65);
   line-height: 1;
   padding: 1rem 2rem;
+  margin: 0px 0px 0px 0px;
   border-radius: 25px;
-
-
+  font-size: 35px;
 }
+
+section.light a{
+  text-decoration: none;
+  color: fuchsia;
+
+ }
 
 .left {
   grid-column: 3 / 10;

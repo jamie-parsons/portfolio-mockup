@@ -118,9 +118,9 @@ moveCamera();
 function animate() {
   requestAnimationFrame(animate);
 
-  torus.rotation.x += 0.005;
-  torus.rotation.y += .005;
-  torus.rotation.z += .001;
+  torus.rotation.x += 0.002;
+  torus.rotation.y += .0005;
+  torus.rotation.z += .0001;
 
   
 
@@ -130,3 +130,4 @@ function animate() {
 }
 
 animate();
+ 
