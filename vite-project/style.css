@@ -45,11 +45,14 @@ header {
   
 }
 
+
+
 #title{
   /* position:relative; */
   grid-column: 1/12;
   color: hsl(73, 69%, 80%);
-  
+  transition-duration: 500ms;
+  /* transition-property: attr(data-text); */
   font-weight: 700;
   font-size: 10.5rem;
   text-align: center;
@@ -68,6 +71,11 @@ header {
   filter: blur(8px);
   z-index: -1;
 
+}
+
+#title:hover {
+  color:pink;
+  transform: rotate(0deg)  skew(0deg);
 }
 
 h1, h2, h3 {
