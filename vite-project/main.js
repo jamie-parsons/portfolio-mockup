@@ -5,7 +5,7 @@ var text = document.getElementById('title')
 var shadow = '';
 
 for (var i = 0; i < 30; i++ ) {
-  shadow +=(shadow? ',':'')+ i*(-1)+ 'px ' + i*1+'px 0 darkslategrey';
+  shadow +=(shadow? ',':'')+ i*(-1)+ 'px ' + i*1+'px 0 #2d88f0';
 }
 text.style.textShadow = shadow;
 
@@ -58,7 +58,7 @@ const pointLight = new THREE.PointLight('grey');
 pointLight.position.set(-20, 15, 5);
 scene.add(pointLight);
 
-const pointLightSide = new THREE.PointLight('deeppink');
+const pointLightSide = new THREE.PointLight('mediumorchid');
 pointLightSide.position.set(10, -10, 5);
 scene.add(pointLightSide);
 
