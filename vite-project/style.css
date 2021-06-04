@@ -12,7 +12,8 @@ canvas{
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   display: block;
-  background-color: hsl(200, 58%, 15%)
+  background-color: hsl(200, 58%, 15%);
+  overflow-x: hidden;
 }
 
 
@@ -51,12 +52,14 @@ header {
   /* position:relative; */
   grid-column: 1/12;
   color: hsl(73, 69%, 80%);
-  transition-duration: 500ms;
-  /* transition-property: attr(data-text); */
+  /* transition: 1000ms color, 500ms transform; */
+
+  transition: 1000ms, 500ms transform;
+  /* transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;  */
+    /* transition-property: color, transform;  */
   font-weight: 700;
   font-size: 10.5rem;
   text-align: center;
-  
   transform: rotate(-10deg)  skew(10deg);
 }
 
