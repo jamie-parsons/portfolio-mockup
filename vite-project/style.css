@@ -1,3 +1,7 @@
+/*TODO: change background opacity to root var*/
+/*TODO: snap pages to screen height*/
+/*TODO: add images, preview pages*/
+/*TODO: clamp sizes for mobile*/
 canvas{
   position: fixed;
   display: block;
@@ -8,7 +12,7 @@ canvas{
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.65);
-  --spacing: 350px;
+  /* --spacing: 350px; */
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   display: block;
@@ -23,11 +27,11 @@ main{
   color: white;
   z-index: 99;
   position: absolute ;
-  margin: 0px 0px 0px;
+  margin: 0px 0px 0px ;
   /*padding: 120px 0px;*/
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
   /*grid-template-rows: 1fr 2fr 1fr;*/
   /*opacity: 0;*/
 
@@ -38,22 +42,30 @@ main{
 
 header {
   /*background: var(--dark-bg);*/
+  display: grid;
+  align-content: center;
+  margin-top:-50px;
+  padding-bottom:50px;
+
   grid-column: 2 / span 10;
   /*justify-self: end;*/
-  padding: 2rem;
-  margin-bottom: var(--spacing);
-  border-radius: 25px;
-  
+  /* padding: 2rem; */
+  /* margin-bottom: var(--spacing); */
+  /* border-radius: 25px; */
+  height: 100vh;
+
 }
 
 
 
 #title{
   /* position:relative; */
-  grid-column: 1/12;
+
+  /* grid-column: 1/12;
+  grid-row: 2/ 4; */
+  /* place-items: center; */
   color: hsl(73, 69%, 80%);
   /* transition: 1000ms color, 500ms transform; */
-
   transition: 1000ms, 500ms transform;
   /* transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;  */
     /* transition-property: color, transform;  */
@@ -81,7 +93,18 @@ header {
   transform: rotate(0deg)  skew(0deg);
 }
 
-h1, h2, h3 {
+#intro p{
+  display: grid;
+  height: 100vh;
+  align-content: center;
+  place-items: center;
+
+}
+
+h1, h2, h3, #intro {
+  align-content: center;
+  place-items: center;
+
   font-family: 'Righteous';
   font-size: 60px;
   font-weight: 700;
@@ -90,6 +113,8 @@ h1, h2, h3 {
 }
 
 blockquote{
+  align-content: center;
+
   font-family: 'Lobster';
   font-size: 35px;
   font-weight: 700;
@@ -100,6 +125,8 @@ blockquote{
 }
 
 section {
+  align-content: center;
+
   place-items: center;
   text-align: center;
   grid-column: 2 / span 10;
@@ -127,9 +154,15 @@ blockquote p {
   font-size: 35px;
 }
 
-section.light a{
+a{
   text-decoration: none;
-  color: fuchsia;
+  color: hsl(73, 69%, 80%);
+
+ }
+
+ a:hover{
+  text-decoration: none;
+  color: pink;
 
  }
 
