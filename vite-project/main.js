@@ -1,6 +1,7 @@
 import * as THREE from 'three';  
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+/*START function for title effect*/
 var text = document.getElementById('title');
 var shadow = '';
 
@@ -8,6 +9,7 @@ for (var i = 0; i < 30; i++ ) {
   shadow +=(shadow? ',':'')+ i*(-1)+ 'px ' + i*1+'px 0 #2d88f0';
 }
 text.style.textShadow = shadow;
+/*END function for title effect*/
 
 const scene = new THREE.Scene();
 

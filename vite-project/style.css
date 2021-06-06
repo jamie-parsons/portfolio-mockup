@@ -2,6 +2,7 @@
 /*TODO: snap pages to screen height*/
 /*TODO: add images, preview pages*/
 /*TODO: clamp sizes for mobile*/
+
 canvas{
   position: fixed;
   display: block;
@@ -20,7 +21,6 @@ canvas{
   overflow-x: hidden;
 }
 
-
 main{
   width: 100vw;
   height: 100vh;
@@ -37,16 +37,12 @@ main{
 
 }
 
-
-
-
 header {
   /*background: var(--dark-bg);*/
   display: grid;
   align-content: center;
   margin-top:-50px;
   padding-bottom:50px;
-
   grid-column: 2 / span 10;
   /*justify-self: end;*/
   /* padding: 2rem; */
@@ -56,16 +52,12 @@ header {
 
 }
 
-
-
 #title{
   /* position:relative; */
-
   /* grid-column: 1/12;
   grid-row: 2/ 4; */
   /* place-items: center; */
   color: hsl(73, 69%, 80%);
-  /* transition: 1000ms color, 500ms transform; */
   transition: 1000ms, 500ms transform;
   /* transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1) ;  */
     /* transition-property: color, transform;  */
@@ -73,6 +65,7 @@ header {
   font-size: 10.5rem;
   text-align: center;
   transform: rotate(-10deg)  skew(10deg);
+
 }
 
 #title:before {
@@ -85,6 +78,7 @@ header {
   text-shadow: none;
   filter: blur(8px);
   z-index: -1;
+  /* filter: blur(3px); */
 
 }
 
@@ -104,12 +98,11 @@ header {
 h1, h2, h3, #intro {
   align-content: center;
   place-items: center;
-
   font-family: 'Righteous';
   font-size: 60px;
   font-weight: 700;
   font-style: normal;
-  
+  font-kerning: auto ;  
 }
 
 blockquote{
