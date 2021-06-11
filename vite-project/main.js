@@ -10,11 +10,11 @@ for (var i = 0; i < 30; i++ ) {
 }
 text.style.textShadow = shadow;
 /*END function for title effect*/
+/*add pin for title effect*/
+/*scroll stick*/
 
 const scene = new THREE.Scene();
-
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000); /*field of view based on 360deg, aspect ratio, stuff camera can see (almost everything)*/
-
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
@@ -129,8 +129,6 @@ function animate() {
   torus.rotation.x += 0.002;
   torus.rotation.y += .0005;
   torus.rotation.z += .0001;
-
-  
 
   //controls.update();
 
