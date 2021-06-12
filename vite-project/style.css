@@ -114,7 +114,8 @@ blockquote{
   margin: 0px;
   grid-column: 3 / span 8;
   margin-bottom: var(--spacing);
-
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
 }
 
 section {
@@ -129,6 +130,8 @@ section {
   line-height: 1.5;
   margin-bottom: var(--spacing);
   border-radius: 25px;
+  scroll-behavior: smooth;
+  scroll-snap-type-y: mandatory;
 }
 
 .container__image {
