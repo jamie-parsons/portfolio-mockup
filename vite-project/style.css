@@ -89,10 +89,14 @@ header {
 
 #intro p{
   display: grid;
+  display: inline-block;
   height: 100vh;
   align-content: center;
   place-items: center;
-
+  position: relative;
+  transform-origin: left;
+  /* font-size: 3em; */
+  transition: 0.5s;
 }
 
 h1, h2, h3, #intro {
@@ -120,7 +124,6 @@ blockquote{
 
 section {
   align-content: center;
-
   place-items: center;
   text-align: center;
   grid-column: 2 / span 10;
@@ -133,6 +136,12 @@ section {
   scroll-behavior: smooth;
   scroll-snap-type-y: mandatory;
 }
+
+/* section .intro p{
+
+  display: inline-block;
+  transition: 0.5s;
+} */
 
 .container__image {
   grid-column-start: 5;
@@ -153,15 +162,14 @@ blockquote p {
 a{
   text-decoration: none;
   color: hsl(73, 69%, 80%);
-
  }
 
  a:hover{
   text-decoration: none;
   color: pink;
-
  }
 
 .left {
   grid-column: 3 / 10;
 }
+
