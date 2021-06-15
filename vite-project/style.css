@@ -19,11 +19,13 @@ canvas{
   display: block;
   background-color: hsl(200, 58%, 15%);
   overflow-x: hidden;
+  scroll-behavior: smooth;
+
 }
 
 main{
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   color: white;
   z-index: 99;
   position: absolute ;
@@ -31,6 +33,7 @@ main{
   /*padding: 120px 0px;*/
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   /* grid-template-rows: repeat(4, 1fr); */
   /*grid-template-rows: 1fr 2fr 1fr;*/
   /*opacity: 0;*/
@@ -88,16 +91,20 @@ header {
 }
 
 #intro p{
+  
   display: grid;
   display: inline-block;
-  height: 100vh;
   align-content: center;
   place-items: center;
   position: relative;
   transform-origin: left;
   /* font-size: 3em; */
   transition: 0.5s;
+  border-radius: 25px;
+  background: var(--dark-bg);
 }
+
+
 
 h1, h2, h3, #intro {
   align-content: center;
@@ -107,11 +114,11 @@ h1, h2, h3, #intro {
   font-weight: 700;
   font-style: normal;
   font-kerning: auto ;  
+  
 }
 
 blockquote{
   align-content: center;
-
   font-family: 'Lobster';
   font-size: 35px;
   font-weight: 700;
@@ -123,25 +130,27 @@ blockquote{
 }
 
 section {
-  align-content: center;
+  height: 100vh;
+  
+  /* align-content: center; */
   place-items: center;
   text-align: center;
-  grid-column: 2 / span 10;
-  justify-content: end;
-  background: var(--dark-bg);
+  grid-column: 3 / span 8;
   font-size: 20px;
   line-height: 1.5;
-  margin-bottom: var(--spacing);
-  border-radius: 25px;
-  scroll-behavior: smooth;
-  scroll-snap-type-y: mandatory;
+  /* margin-bottom: var(--spacing); */
 }
 
 /* section .intro p{
-
   display: inline-block;
   transition: 0.5s;
 } */
+
+#stack   {
+  border-radius: 100%;
+  background: var(--dark-bg);
+}
+
 
 .container__image {
   grid-column-start: 5;
@@ -149,7 +158,8 @@ section {
   float: right;
 }
 
-blockquote p {
+#hello {
+  height: 100vh;
   color: black;
   background-color: rgba(197, 170, 170, 0.65);
   line-height: 1;
