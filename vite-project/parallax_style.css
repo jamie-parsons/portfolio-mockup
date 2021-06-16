@@ -35,23 +35,57 @@
     padding-left: 10vw;
     padding-top: 16vw;
     height: 80vh;
+    z-index: 99;
+
 }
 
 #umbrella_pink {
     position: absolute;
     padding-left: 50vw;
     padding-top: 0vw;
+    margin-top: -8px;
     z-index: 99;
     /* height: 30vh; */
 }
 
-h1 {
+#rain_one {
+    position: absolute;
+    padding-left: 7vw;
+    padding-top: 0vw;
+    z-index: 90;
+    /* height: 30vh; */
+}
+
+#rain_two {
+    position: absolute;
+    padding-left: 28vw;
+    padding-top: 3vw;
+    z-index: 90;
+    /* height: 30vh; */
+}
+
+h1.hello{
     position: absolute;
     z-index: 99;
-    margin: 14% 30%;
+    margin: 14% 0% 0% 30%;
     padding: 1%;
-    color: pink;
+    color: #f2afbd;
     background-color: white;
     border-radius: 10px;;
     
+}
+
+h1.lovely{
+    position: absolute;
+    z-index: 99;
+    margin: 32% 0% 0% 45%;
+    padding: 1%;
+    color: #ff9955;
+    background-color: white;
+    border-radius: 10px;;
+    /* d4d12e */
+}
+
+span.yellow{
+    color: #d4d12e;
 }
