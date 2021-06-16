@@ -7,6 +7,9 @@
     height: 100vh;
     background: radial-gradient( papayawhip, rgba(158, 225, 229, 100));
     font-family: 'Righteous';
+    --that-pink: #f2afbd;
+    --that-yellow: #d4d12e;
+    --that-orange: #ff9955;
     /* display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 1fr); */
