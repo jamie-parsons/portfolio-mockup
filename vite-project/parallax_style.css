@@ -1,0 +1,42 @@
+
+:root {
+    background-color: rgba(158, 225, 229, 100);
+    font-family: 'Righteous';
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+.stage {
+    position: relative;
+    width: 100%;
+}
+
+/* #background { */
+    /* width: 100%;
+    height:auto; */
+    /* position: absolute; */
+    /* z-index: 1;  */
+    /* width: 100%; */
+/* } */
+
+#umbrella_yellow {
+    position: absolute;
+    height: 100vh;  
+    padding-left: 40vw;
+    overflow: hidden;  
+    /* z-index: 2;  */
+    /* width: 100%; */
+    background-color: transparent;
+}
+
+h1 {
+    position: absolute;
+    z-index: 99;
+    margin: 12% 15%;
+    padding: 1%;
+    color: pink;
+    background-color: white;
+    border-radius: 10px;;
+    
+}
