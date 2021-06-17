@@ -13,20 +13,26 @@
 </head>
 <body>
     <main>
-    <div class="stage">
+    <div class="container">
+    <div id="scene">
     <!-- <object id="background" data="AssetsSVG/background.svg" style="width:100vw;"></object>  -->
-    <object id="umbrella_yellow" data="AssetsSVG/umbrellayellowfull.svg" style="height: 100vh"></object> 
-    <object id="umbrella_orange" data="AssetsSVG/umbrellaorange.svg" style="height: 55vh"></object> 
-    <object id="umbrella_pink" data="AssetsSVG/umbrellapinksmall.svg" style="height: 30vh"></object> 
-    <object id="rain_one" data="AssetsSVG/rainone.svg" style="height: 100vh"></object> 
-    <object id="rain_two" data="AssetsSVG/raintwo.svg" style="height: 100vh"></object> 
-    <object id="clouds_one" data="AssetsSVG/cloudsone.svg" style="height: 100vh"></object> 
-    <object id="clouds_right" data="AssetsSVG/cloudsright.svg" style="height: 40vh"></object> 
-    <object id="clouds_big" data="AssetsSVG/cloudbig.svg" style="height: 40vh"></object> 
-
+        <div class="layer" data-depth="0.2"><object id="umbrella_yellow"  data="AssetsSVG/umbrellayellowfull.svg" style="height: 100vh"></object></div> 
+        <div class="layer" data-depth="0.3"><object id="umbrella_orange" data="AssetsSVG/umbrellaorange.svg" style="height: 100vh"></object></div>  
+        <div class="layer" data-depth="0.1"><object id="umbrella_pink" data="AssetsSVG/umbrellapinksmall.svg" style="height: 30vh"></object></div>  
+        <div class="layer" data-depth="0.42"><object id="rain_one" data="AssetsSVG/rainone.svg" style="height: 100vh"></object></div>  
+        <div class="layer" data-depth="0.05"><object id="rain_two" data="AssetsSVG/raintwo.svg" style="height: 100vh"></object></div>  
+        <div class="layer" data-depth="0.2"><object id="clouds_one" data="AssetsSVG/cloudsone.svg" style="height: 100vh"></object></div>  
+        <div class="layer" data-depth="0.4"><object id="clouds_right" data="AssetsSVG/cloudsright.svg" style="height: 40vh"></object></div>  
+        <div class="layer" data-depth="0.2"><object id="clouds_big" data="AssetsSVG/cloudbig.svg" style="height: 40vh"></object></div>  
+    </div>
     </div>
     <h1 class="hello">hello babe</h1>
     <h1 class="lovely">you look <span class="yellow">lovely</span> today</h1>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
 </body>
 </html>
