@@ -21,7 +21,6 @@ canvas{
   background-color: hsl(200, 58%, 15%);
   overflow-x: hidden;
   scroll-behavior: smooth;
-
 }
 
 main{
@@ -38,7 +37,6 @@ main{
   /* grid-template-rows: repeat(4, 1fr); */
   /*grid-template-rows: 1fr 2fr 1fr;*/
   /*opacity: 0;*/
-
 }
 
 header {
@@ -69,7 +67,6 @@ header {
   font-size: 10.5rem;
   text-align: center;
   transform: rotate(-10deg)  skew(10deg);
-
 }
 
 #title:before {
@@ -106,7 +103,6 @@ header {
 }
 
 
-
 h1, h2, h3, #intro {
   align-content: center;
   place-items: center;
@@ -119,22 +115,28 @@ h1, h2, h3, #intro {
 }
 
 blockquote{
-  align-content: center;
+  display: grid; /* definitely centered */
+  place-items: center; /* definitely centered */
+  
+  /* align-content: center; */
   font-family: 'Lobster';
   font-size: 35px;
   font-weight: 700;
   margin: 0px;
   grid-column: 3 / span 8;
-  margin-bottom: var(--spacing);
+  /* margin-bottom: var(--spacing); */
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
+  text-align: center;
+  
+
 }
 
 section {
   height: 100vh;
-  
+  display: grid; /* definitely centered */
+  place-items: center; /* definitely centered */
   /* align-content: center; */
-  place-items: center;
   text-align: center;
   grid-column: 3 / span 8;
   font-size: 20px;
@@ -159,10 +161,10 @@ section {
   float: right;
 }
 
-#hello {
-  height: 100vh;
+#hello p, .light h2, .light p{
+  /* height: 100vh; */
   color: black;
-  background-color: rgba(197, 170, 170, 0.65);
+  background: rgba(197, 170, 170, 0.65);
   line-height: 1;
   padding: 1rem 2rem;
   margin: 0px 0px 0px 0px;
@@ -173,6 +175,10 @@ section {
 a{
   text-decoration: none;
   color: hsl(73, 69%, 80%);
+ }
+
+ i {
+  color:cyan;
  }
 
  a:hover{
