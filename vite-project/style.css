@@ -9,7 +9,9 @@ canvas{
   display: block;
   top: 0;
   left: 0;
-  filter:grayscale(.1);
+  /* filter:grayscale(.7); */
+  /* filter:brightness(1.9) */
+  filter:opacity(0.9);
 }
 
 :root {
@@ -18,7 +20,9 @@ canvas{
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   display: block;
-  background-color: hsl(200, 58%, 15%);
+  /* background-color: hsl(200, 58%, 15%); */
+  background-color: bisque;
+
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -88,12 +92,11 @@ header {
   transform: rotate(0deg)  skew(0deg);
 }
 
-#intro p{
-  
+#projects h2, #projects p, #intro p{
   display: grid;
   display: inline-block;
-  align-content: center;
-  place-items: center;
+  /* align-content: left;
+  place-items: left; */
   position: relative;
   transform-origin: left;
   /* font-size: 3em; */
@@ -103,21 +106,20 @@ header {
 }
 
 
-h1, h2, h3, #intro {
-  align-content: center;
-  place-items: center;
+h1, h2, h3, #intro, #projects {
+  /* align-content: left; */
+  /* place-items: center; */
   font-family: 'Righteous';
   font-size: 60px;
   font-weight: 700;
-  font-style: normal;
-  font-kerning: auto ;  
+  /* font-style: normal; */
+  /* font-kerning: auto ;   */
   
 }
 
 blockquote{
   display: grid; /* definitely centered */
   place-items: center; /* definitely centered */
-  
   /* align-content: center; */
   font-family: 'Lobster';
   font-size: 35px;
@@ -139,18 +141,26 @@ section {
   /* align-content: center; */
   text-align: center;
   grid-column: 3 / span 8;
-  font-size: 20px;
-  line-height: 1.5;
+  /* font-size: 20px; */
+  line-height: 1;
   /* margin-bottom: var(--spacing); */
 }
 
+section.wrapper#stack h2, section.wrapper#stack p{
+  /* line-height: ; */
+  font-family: "Righteous";
+}
+
+section.wrapper#stack p{
+  font-size: 25px;
+}
 /* section .intro p{
   display: inline-block;
   transition: 0.5s;
 } */
 
 #stack   {
-  border-radius: 100%;
+  border-radius: 20%;
   background: var(--dark-bg);
 }
 
@@ -165,12 +175,25 @@ section {
   /* height: 100vh; */
   color: black;
   background: rgba(197, 170, 170, 0.65);
-  line-height: 1;
+  line-height: 1.5;
   padding: 1rem 2rem;
   margin: 0px 0px 0px 0px;
   border-radius: 25px;
-  font-size: 35px;
+  font-size: 45px;
 }
+
+.light {
+  height: 100vh;
+  
+}
+ .wordscenter  {
+  color: #ffb699;
+
+}
+
+/*i.wordsleft {
+  text-align: left;
+} */
 
 a{
   text-decoration: none;
@@ -178,7 +201,7 @@ a{
  }
 
  i {
-  color:cyan;
+  color:#2d88f0;
  }
 
  a:hover{
