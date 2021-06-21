@@ -146,6 +146,13 @@ section.wrapper#stack p{
   background: var(--dark-bg);
 }
 
+div.box {
+  display: grid;
+  /* display: inline-block; */
+  grid-template-columns: 1/span 2;
+  background-color: var(--dark-bg);
+}
+
 h1, h2, h3, #intro, #projects {
   /* align-content: left; */
   /* place-items: center; */
