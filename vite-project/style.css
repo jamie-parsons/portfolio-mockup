@@ -84,28 +84,12 @@ header {
   filter: blur(8px);
   z-index: -1;
   /* filter: blur(3px); */
-
 }
+
 
 #title:hover {
   color:pink;
   transform: rotate(0deg)  skew(0deg);
-}
-
-blockquote{
-  display: grid; /* definitely centered */
-  place-items: center; /* definitely centered */
-  /* align-content: center; */
-  font-family: 'Lobster';
-  font-size: 35px;
-  font-weight: 700;
-  margin: 0px;
-  grid-column: 3 / span 8;
-  /* margin-bottom: var(--spacing); */
-  scroll-behavior: smooth;
-  scroll-snap-type: mandatory;
-  text-align: center;
-
 }
 
 section {
@@ -132,6 +116,21 @@ section.wrapper#stack p{
   display: inline-block;
   transition: 0.5s;
 } */
+
+blockquote{
+  display: grid; /* definitely centered */
+  place-items: center; /* definitely centered */
+  /* align-content: center; */
+  font-family: 'Lobster';
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0px;
+  grid-column: 3 / span 8;
+  /* margin-bottom: var(--spacing); */
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  text-align: center;
+}
 
 #projects h2, #projects p, #intro p{
   display: grid;
@@ -161,7 +160,6 @@ h1, h2, h3, #intro, #projects {
   font-weight: 700;
   /* font-style: normal; */
   /* font-kerning: auto ;   */
-
 }
 
 #stack   {
